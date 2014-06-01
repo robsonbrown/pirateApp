@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{28c6dbd1-0d25-4b52-93cd-3d2e8cd28c4d}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{b24e3f35-2858-4d1e-89a7-3d81db4c6ccd}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Main\classes">
+      <UniqueIdentifier>{b2d086c1-853b-4122-a88b-10584c6c8179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\definitions">
+      <UniqueIdentifier>{826161d3-2f82-429f-8c78-50bbef4bbdd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\classes\people">
+      <UniqueIdentifier>{722411dd-f9a8-478a-acf3-b995587cc45e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\ultilities">
+      <UniqueIdentifier>{3acd3693-e8bc-464b-8ae7-d72e8dd90e42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="person.cpp">
+      <Filter>Main\classes\people</Filter>
+    </ClCompile>
+    <ClCompile Include="pirate.cpp">
+      <Filter>Main\classes\people</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_pirateApp.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_pirateApp.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="pirateApp.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_pirateApp.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="pirateApp.h">
+      <Filter>Main</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pirateApp.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pirateApp.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="parameter_defs.h">
+      <Filter>Main\definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="person.h">
+      <Filter>Main\classes\people</Filter>
+    </ClInclude>
+    <ClInclude Include="pirate.h">
+      <Filter>Main\classes\people</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_pirateApp.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

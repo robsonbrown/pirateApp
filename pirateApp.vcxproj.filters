@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pirateApp.cpp" />
+    <ClCompile Include="person.cpp">
+      <Filter>classes\people</Filter>
+    </ClCompile>
+    <ClCompile Include="pirate.cpp">
+      <Filter>classes\people</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_pirateApp.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_pirateApp.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="person.h">
+      <Filter>classes\people</Filter>
+    </ClInclude>
+    <ClInclude Include="pirate.h">
+      <Filter>classes\people</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_pirateApp.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="parameter_defs.h">
+      <Filter>core\definitions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="pirateApp.h" />
+    <CustomBuild Include="pirateApp.qrc">
+      <Filter>ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pirateApp.ui">
+      <Filter>ui</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="classes">
+      <UniqueIdentifier>{3597ff27-3f3f-4f63-a585-0fdc43023619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="classes\people">
+      <UniqueIdentifier>{7a7403d2-a214-4bd6-a714-c5c6b250521b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{d36463a0-0ebd-4875-bf0c-3464ffd39ad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{51529702-dad1-473d-b99b-04f655e3b23f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\definitions">
+      <UniqueIdentifier>{35dc6eae-e25e-4642-99c1-77f71ed5edeb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
