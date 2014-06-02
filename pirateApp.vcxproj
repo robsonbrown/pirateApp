@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="game_data.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_pirateApp.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -199,6 +200,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="game_data.h" />
     <ClInclude Include="GeneratedFiles\ui_pirateApp.h" />
     <ClInclude Include="parameter_defs.h" />
     <ClInclude Include="person.h" />

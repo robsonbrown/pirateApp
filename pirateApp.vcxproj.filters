@@ -15,6 +15,9 @@
     <ClCompile Include="GeneratedFiles\Debug\moc_pirateApp.cpp">
       <Filter>ui</Filter>
     </ClCompile>
+    <ClCompile Include="game_data.cpp">
+      <Filter>singletons</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="person.h">
@@ -29,6 +32,9 @@
     <ClInclude Include="parameter_defs.h">
       <Filter>core\definitions</Filter>
     </ClInclude>
+    <ClInclude Include="game_data.h">
+      <Filter>singletons</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="pirateApp.h" />
@@ -36,7 +42,7 @@
       <Filter>ui</Filter>
     </CustomBuild>
     <CustomBuild Include="pirateApp.ui">
-      <Filter>ui</Filter>
+      <Filter>ui\qt_design</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +60,12 @@
     </Filter>
     <Filter Include="core\definitions">
       <UniqueIdentifier>{35dc6eae-e25e-4642-99c1-77f71ed5edeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\qt_design">
+      <UniqueIdentifier>{dfedb09e-4c9c-4294-999b-f567d5a3ac24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="singletons">
+      <UniqueIdentifier>{5083bc9a-9486-49bd-b31f-bb069ae5044e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
