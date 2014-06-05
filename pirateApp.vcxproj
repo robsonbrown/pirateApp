@@ -139,7 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="game_data.cpp" />
+    <ClCompile Include="classes\people\person.cpp" />
+    <ClCompile Include="classes\people\pirate.cpp" />
+    <ClCompile Include="core\xml\xml_manager.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_pirateApp.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -155,9 +157,8 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="person.cpp" />
-    <ClCompile Include="pirate.cpp" />
     <ClCompile Include="pirateApp.cpp" />
+    <ClCompile Include="singletons\game_data.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="pirateApp.h">
@@ -200,11 +201,12 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="game_data.h" />
+    <ClInclude Include="classes\people\person.h" />
+    <ClInclude Include="classes\people\pirate.h" />
+    <ClInclude Include="core\definitions\parameter_defs.h" />
+    <ClInclude Include="core\xml\xml_manager.h" />
     <ClInclude Include="GeneratedFiles\ui_pirateApp.h" />
-    <ClInclude Include="parameter_defs.h" />
-    <ClInclude Include="person.h" />
-    <ClInclude Include="pirate.h" />
+    <ClInclude Include="singletons\game_data.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="pirateApp.qrc">

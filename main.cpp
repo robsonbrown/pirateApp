@@ -1,12 +1,12 @@
-#include "game_data.h"
 #include "pirateApp.h"
+#include "singletons/game_data.h"
 #include <QtWidgets/QApplication>
 
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 
-	pirateApp w;
+	PIRATE_APP::pirateApp w;
 	w.show();
 
 	//Initalise the singletons

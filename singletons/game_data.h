@@ -1,6 +1,6 @@
 #pragma once
 
-#include "parameter_defs.h"
+#include "core/definitions/parameter_defs.h"
 
 class GAME_DATA
 {

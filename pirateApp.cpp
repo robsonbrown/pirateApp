@@ -1,35 +1,42 @@
 #include "pirateApp.h"
 
-#include "pirate.h"
-#include "game_data.h"
+#include "classes/people/pirate.h"
+#include "core/xml/xml_manager.h"
+#include "singletons/game_data.h"
 
-pirateApp::pirateApp(QWidget *parent) : QMainWindow(parent)
+namespace PIRATE_APP
 {
-	ui.setupUi(this);
-	initialise();
-}
+	pirateApp::pirateApp(QWidget *parent) : QMainWindow(parent)
+	{
+		ui.setupUi(this);
+		initialise();
+	}
 
-pirateApp::~pirateApp()
-{
+	pirateApp::~pirateApp()
+	{
 
-}
+	}
 
-//----------------------------------
-//
-//----------------------------------
-void pirateApp::on_btnHello_clicked()
-{
-	ui.btnHello->setText("Hello123");
-	ui.btnHello->setEnabled(false);
-}
+	//----------------------------------
+	//
+	//----------------------------------
+	void pirateApp::on_btnHello_clicked()
+	{
+		ui.btnHello->setText("Hello123");
+		ui.btnHello->setEnabled(false);
+	}
 
-//--------------------------
-//
-//--------------------------
-void pirateApp::initialise()
-{
-	PIRATE tempPirate(1);
-	STRING tempString = std::to_string(GAME_DATA::get_instance()->get_test_variable());
+	//--------------------------
+	//
+	//--------------------------
+	void pirateApp::initialise()
+	{
+		PIRATE tempPirate(1);
+		STRING tempString = std::to_string(GAME_DATA::get_instance()->get_test_variable());
 
-	ui.lblPirate->setText(QString::fromStdString(tempString));
+		ui.lblPirate->setText(QString::fromStdString(tempString));
+
+		XML_MANAGER::generate_test_xml();
+	}
+
 }

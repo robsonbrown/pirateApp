@@ -3,36 +3,42 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pirateApp.cpp" />
-    <ClCompile Include="person.cpp">
-      <Filter>classes\people</Filter>
-    </ClCompile>
-    <ClCompile Include="pirate.cpp">
-      <Filter>classes\people</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\qrc_pirateApp.cpp">
       <Filter>ui</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_pirateApp.cpp">
       <Filter>ui</Filter>
     </ClCompile>
-    <ClCompile Include="game_data.cpp">
+    <ClCompile Include="classes\people\pirate.cpp">
+      <Filter>classes\people</Filter>
+    </ClCompile>
+    <ClCompile Include="classes\people\person.cpp">
+      <Filter>classes\people</Filter>
+    </ClCompile>
+    <ClCompile Include="core\xml\xml_manager.cpp">
+      <Filter>core\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="singletons\game_data.cpp">
       <Filter>singletons</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="person.h">
-      <Filter>classes\people</Filter>
-    </ClInclude>
-    <ClInclude Include="pirate.h">
-      <Filter>classes\people</Filter>
-    </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_pirateApp.h">
       <Filter>ui</Filter>
     </ClInclude>
-    <ClInclude Include="parameter_defs.h">
+    <ClInclude Include="core\xml\xml_manager.h">
+      <Filter>core\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="classes\people\pirate.h">
+      <Filter>classes\people</Filter>
+    </ClInclude>
+    <ClInclude Include="classes\people\person.h">
+      <Filter>classes\people</Filter>
+    </ClInclude>
+    <ClInclude Include="core\definitions\parameter_defs.h">
       <Filter>core\definitions</Filter>
     </ClInclude>
-    <ClInclude Include="game_data.h">
+    <ClInclude Include="singletons\game_data.h">
       <Filter>singletons</Filter>
     </ClInclude>
   </ItemGroup>
@@ -66,6 +72,22 @@
     </Filter>
     <Filter Include="singletons">
       <UniqueIdentifier>{5083bc9a-9486-49bd-b31f-bb069ae5044e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\xml">
+      <UniqueIdentifier>{d287ba6b-8adb-45e2-9414-78b9289b8863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{68645dfd-84ac-4384-b000-36278bf793f3}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="core\console">
+      <UniqueIdentifier>{227d79af-2c92-4c22-bfe3-0ca8ce7f567e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

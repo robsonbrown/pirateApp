@@ -4,6 +4,9 @@
 #include <QtWidgets/QMainWindow>
 #include "ui_pirateApp.h"
 
+namespace PIRATE_APP
+{
+
 class pirateApp : public QMainWindow
 {
 	Q_OBJECT
@@ -20,5 +23,7 @@ private:
 	public slots:
 	void on_btnHello_clicked();
 };
+
+}
 
 #endif // PIRATEAPP_H

@@ -3,7 +3,7 @@
 #ifndef PERSON_H
 #define PERSON_H
 
-#include "parameter_defs.h"
+#include "core/definitions/parameter_defs.h"
 
 class PERSON
 {
