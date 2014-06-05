@@ -1,22 +1,22 @@
 
 #include "core/xml/xml_manager.h"
 
-#include <QXmlStreamWriter>
+#include "core/definitions/parameter_defs.h"
 #include "qfile.h"
+#include <QXmlStreamWriter>
 
 //--------------------------
 //
 //--------------------------
 void XML_MANAGER::save_xml(const QMap<QString, QString>& firstname, const QMap<QString, QString>& surname, const QMap<QString, QString>& phoneNumber)
 {
-	/* For testing purpose, we generate in C drives,  */
-	QFile file("c://contacts.xml");
+	QFile file("c://test/contacts.xml");
 
 	/*open a file */
 	if (!file.open(QIODevice::WriteOnly))
 	{
 		/* show error message if not able to open file */
-		//QMessageBox::warning(0, "Read only", "The file is in read only mode");
+		TRACE( "The XML file is in read only mode");
 	}
 	else
 	{
@@ -56,6 +56,7 @@ void XML_MANAGER::save_xml(const QMap<QString, QString>& firstname, const QMap<Q
 			xmlWriter->writeEndElement();
 
 		}
+
 		/*end tag persons*/
 		xmlWriter->writeEndElement();
 		/*end document */

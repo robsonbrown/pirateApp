@@ -27,8 +27,6 @@ namespace PIRATE_APP
 	{
 		ui.btnHello->setText("Hello123");
 		ui.btnHello->setEnabled(false);
-
-		TRACE("test");
 	}
 
 	//--------------------------

@@ -21,9 +21,6 @@
     <ClCompile Include="singletons\game_data.cpp">
       <Filter>singletons</Filter>
     </ClCompile>
-    <ClCompile Include="core\console\console.cpp">
-      <Filter>core\console</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_pirateApp.h">
@@ -43,9 +40,6 @@
     </ClInclude>
     <ClInclude Include="singletons\game_data.h">
       <Filter>singletons</Filter>
-    </ClInclude>
-    <ClInclude Include="core\console\console.h">
-      <Filter>core\console</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -91,9 +85,6 @@
       <UniqueIdentifier>{68645dfd-84ac-4384-b000-36278bf793f3}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
-    </Filter>
-    <Filter Include="core\console">
-      <UniqueIdentifier>{227d79af-2c92-4c22-bfe3-0ca8ce7f567e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

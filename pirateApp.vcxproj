@@ -141,7 +141,6 @@
   <ItemGroup>
     <ClCompile Include="classes\people\person.cpp" />
     <ClCompile Include="classes\people\pirate.cpp" />
-    <ClCompile Include="core\console\console.cpp" />
     <ClCompile Include="core\xml\xml_manager.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_pirateApp.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
@@ -204,7 +203,6 @@
   <ItemGroup>
     <ClInclude Include="classes\people\person.h" />
     <ClInclude Include="classes\people\pirate.h" />
-    <ClInclude Include="core\console\console.h" />
     <ClInclude Include="core\definitions\parameter_defs.h" />
     <ClInclude Include="core\xml\xml_manager.h" />
     <ClInclude Include="GeneratedFiles\ui_pirateApp.h" />
