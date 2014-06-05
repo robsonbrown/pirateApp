@@ -16,3 +16,11 @@ typedef long		  S64;
 
 //Strings
 typedef std::string STRING;
+
+
+//Trace
+#if defined NDEBUG
+#define TRACE( format, ... )
+#else
+#define TRACE( format, ... )   printf( "%s::%s(%d)" format, __FILE__, __FUNCTION__,  __LINE__, __VA_ARGS__ )
+#endif

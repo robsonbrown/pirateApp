@@ -1,5 +1,5 @@
 
-#include "xml_manager.h"
+#include "core/xml/xml_manager.h"
 
 #include <QXmlStreamWriter>
 #include "qfile.h"

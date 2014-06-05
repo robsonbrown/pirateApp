@@ -1,4 +1,4 @@
-#include "pirate.h"
+#include "classes/people/pirate.h"
 
 
 PIRATE::PIRATE()

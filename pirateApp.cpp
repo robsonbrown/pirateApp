@@ -3,6 +3,9 @@
 #include "classes/people/pirate.h"
 #include "core/xml/xml_manager.h"
 #include "singletons/game_data.h"
+#include <iostream>
+
+using namespace std;
 
 namespace PIRATE_APP
 {
@@ -24,6 +27,8 @@ namespace PIRATE_APP
 	{
 		ui.btnHello->setText("Hello123");
 		ui.btnHello->setEnabled(false);
+
+		TRACE("test");
 	}
 
 	//--------------------------
@@ -37,6 +42,7 @@ namespace PIRATE_APP
 		ui.lblPirate->setText(QString::fromStdString(tempString));
 
 		XML_MANAGER::generate_test_xml();
+
 	}
 
 }
