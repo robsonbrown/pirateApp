@@ -1,9 +1,10 @@
 
 #include "core/xml/xml_manager.h"
 
-#include "core/definitions/parameter_defs.h"
 #include "qfile.h"
 #include <QXmlStreamWriter>
+#include "qstring.h"
+#include <string>
 
 //--------------------------
 //
@@ -101,6 +102,58 @@ void XML_MANAGER::generate_test_xml()
 
 	/* call method to generate XML */
 	save_xml( firstname, surname, phoneNumber );
+}
+
+//--------------------------
+//
+//--------------------------
+void XML_MANAGER::read_xml( QString& temp_string )
+{
+	/* We'll parse the example.xml */
+	QFile* file = new QFile("c://test/contacts.xml");
+
+	/* If we can't open it, let's show an error message. */
+	if (!file->open(QIODevice::ReadOnly | QIODevice::Text)) 
+	{
+		TRACE("Couldn't open XML");
+		return;
+	}
+	/* QXmlStreamReader takes any QIODevice. */
+	QXmlStreamReader xml(file);
+	QList< QMap<QString, QString> > persons;
+	/* We'll parse the XML until we reach end of it.*/
+	while (!xml.atEnd() &&!xml.hasError()) 
+	{
+		/* Read next element.*/
+		QXmlStreamReader::TokenType token = xml.readNext();
+		/* If token is just StartDocument, we'll go to next.*/
+		if (token == QXmlStreamReader::StartDocument) {
+			continue;
+		}
+		/* If token is StartElement, we'll see if we can read it.*/
+		if (token == QXmlStreamReader::StartElement) {
+			/* If it's named persons, we'll go to the next.*/
+			if (xml.name() == "persons") {
+				continue;
+			}
+
+			/* If it's named person, we'll dig the information from there.*/
+			if (xml.name() == "person") 
+			{
+				temp_string.append(xml.readElementText());
+
+				//persons.append(this->parsePerson(xml));
+			}
+		}
+	}
+	/* Error handling. */
+	if (xml.hasError()) {
+		TRACE("Couldn't open XML as it's corrupted");
+	}
+	/* Removes any device() or data from the reader
+	* and resets its internal state to the initial state. */
+	xml.clear();
+	//this->addPersonsToUI(persons);
 }
 
 

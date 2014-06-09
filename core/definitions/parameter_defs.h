@@ -1,4 +1,4 @@
-#include <string>
+#include "qstring.h"
 
 //Integers
 
@@ -15,7 +15,7 @@ typedef unsigned long U64;
 typedef long		  S64;
 
 //Strings
-typedef std::string STRING;
+typedef QString STRING;
 
 
 //Trace

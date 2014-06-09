@@ -35,12 +35,13 @@ namespace PIRATE_APP
 	void pirateApp::initialise()
 	{
 		PIRATE tempPirate(1);
-		STRING tempString = std::to_string(GAME_DATA::get_instance()->get_test_variable());
-
-		ui.lblPirate->setText(QString::fromStdString(tempString));
+		STRING tempString /*= std::to_string(GAME_DATA::get_instance()->get_test_variable())*/;
 
 		XML_MANAGER::generate_test_xml();
 
+		XML_MANAGER::read_xml(tempString);
+
+		ui.lblPirate->setText(tempString);
 	}
 
 }
