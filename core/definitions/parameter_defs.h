@@ -1,4 +1,5 @@
 #include "qstring.h"
+#include <map>
 #include <vector>
 
 #ifndef PARAMETER_DEFS_H
@@ -25,13 +26,8 @@ typedef QString			STRING;
 template<typename T>
 using DYNAMIC_ARRAY = std::vector < T >;
 
-
-//template<typename T>
-//class DYNAMIC_ARRAY{
-//	std::vector<T> storageType; 
-//	//typedef typename storageType::iterator iterator;
-//};
-
+template<typename T, typename P>
+using ASSOCIATIVE_ARRAY = std::map < T, P >;
 
 //Trace
 #if defined NDEBUG
